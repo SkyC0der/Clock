@@ -1,4 +1,4 @@
-
+ 
 
 const Clock = require('./index');
 
