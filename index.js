@@ -11,17 +11,18 @@ class Clock {
     return String(this.date.toString().match(/\d\d:\d\d/g));
   }
 
-  plus = (mins) => {
+  plus(mins){
     this.minutes += mins;
     return this;
   };
 
-  minus = (mins) => {
+  minus(mins){
     this.minutes -= mins;
     return this;
   };
 
-  equals = (newClock) => this.toString() === newClock.toString();
+  equals(newClock){
+    return this.toString() === newClock.toString()
+  };
 }
-
 module.exports = Clock;
